@@ -1,9 +1,4 @@
-def append(args=[]):
-    if len(args)<=0:
-        args=[]
-    args.append(0)
+#传递可变参数
+def func (* args):
     print args
-    
-append()
-append([1])
-append()
+func(1,2,3)
