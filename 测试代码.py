@@ -1,14 +1,12 @@
-#函数的默认参数
-def arithmetic(x=1,y=1,operator = "+"):
+#列表作为参数传递
+def arithmetic(args = [],operator="+"):
+    x = args[0]
+    y = args[1]
     result = {
-        "+" : x + y ,
-        "-" : x - y ,
-        "*" : x * y ,
-        "/" : x / y
+        "+": x + y ,
+        "-": x - y ,
+        "*": x * y ,
+        "/": x / y 
     }
-    return result.get(operator) #返回计算结果
-print arithmetic(1,2)
-print arithmetic(1,2, "-")
-print arithmetic(y=3, operator="-")
-print arithmetic(x=4, operator="-")
-print arithmetic(x=3, y=4, operator="-")
+    return result.get(operator)
+print arithmetic([1, 2])
