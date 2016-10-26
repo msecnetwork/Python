@@ -1,6 +1,9 @@
-# -*- coding:utf-8 -*-
-#没有retrun语句的函数返回None
-def func():
-    pass
+#return返回多个值
+def func(x,y,z):
+    l = [x,y,z]
+    l.reverse()
+    numbers=tuple(l)
+    return numbers
 
-print func()
+x,y,z = func(0,1,2)
+print x,y,z
