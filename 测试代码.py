@@ -1,9 +1,6 @@
-from __future__ import division
-def arithmetic(x,y,operator):
-    result = {
-        "+": x + y ,
-        "-": x - y ,
-        "*": x * y ,
-        "/": x / y
-    } 
-return result.get(operator) #返回计算结果
+# -*- coding:utf-8 -*-
+#没有retrun语句的函数返回None
+def func():
+    pass
+
+print func()
